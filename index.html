@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
 <head>
+    <base href="/">
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -30,13 +29,13 @@
 <!-- Add your site or application content here -->
 <div class="header">
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="">Group 20</a>
+        <div class="nav-wrapper container"><a id="logo-container" class="brand-logo waves-effect waves-light" href="/#/">Group 20</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="https://github.com/orgs/ATOS-Time-Machine/" target="_blank">Github</a></li>
-                <li><a href="">Background</a></li>
-                <li><a href="">About Project</a></li>
-                <li><a href="">Research</a></li>
-                <li><a href="">UI</a></li>
+                <li><a href="background">Background</a></li>
+                <li><a href="about">About Project</a></li>
+                <li><a href="research">Research</a></li>
+                <li><a href="ui">UI</a></li>
             </ul>
 
             <!--<ul id="nav-mobile" class="side-nav">-->
@@ -71,17 +70,13 @@
     ga('send', 'pageview');
 </script>
 
-<!-- build:js(.) scripts/vendor.js -->
-<!-- bower:js -->
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/angular-touch/angular-touch.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<!--<script src="bower_components/angular-animate/angular-animate.js"></script>-->
+<!--<script src="bower_components/angular-cookies/angular-cookies.js"></script>-->
+<!--<script src="bower_components/angular-resource/angular-resource.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<!--<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>-->
+<!--<script src="bower_components/angular-touch/angular-touch.js"></script>-->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
@@ -92,6 +87,7 @@
 <!-- Custom JS -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="scripts/init.js"></script>
 <!-- End JS -->
 
 </body>
