@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <base href="/2016/group20/">
+    <!--<base href="/">-->
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -10,7 +11,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!--<link rel="stylesheet" href="styles/main.css">-->
     <!-- endbuild -->
 
     <!-- Custom CSS -->
@@ -20,37 +21,50 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body ng-app="timeMachineSiteApp">
+<body id="top" class="scrollspy" ng-app="timeMachineSiteApp">
+
+
 <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
-<div class="header">
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" class="brand-logo waves-effect waves-light padding" href="/">Group 20</a>
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+
+<div class="navbar-fixed">
+    <nav class="light-blue darken-1" role="navigation">
+        <div class="nav-wrapper container">
+            <div class="brand-logo left active waves-effect wave-light"><a id="logo-container"
+                                                                           href="/">Group 20</a></div>
             <ul class="right hide-on-med-and-down">
                 <li><a href="https://github.com/orgs/ATOS-Time-Machine/" target="_blank">Github</a></li>
-                <li><a href="background">Background</a></li>
                 <li><a href="about">About Project</a></li>
                 <li><a href="research">Research</a></li>
                 <li><a href="ui">UI</a></li>
             </ul>
 
             <!--<ul id="nav-mobile" class="side-nav">-->
-                <!--<li><a href="#">Navbar Link</a></li>-->
+            <!--<li><a href="#">Navbar Link</a></li>-->
             <!--</ul>-->
             <!--<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
         </div>
     </nav>
 </div>
 
-<div class="container">
-    <div ng-view=""></div>
-</div>
 
-<footer class="page-footer orange">
+<div class="no-pad-bot" id="index-banner" ng-view=""></div>
+
+
+<footer class="page-footer teal">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -62,41 +76,35 @@
             <div class="col l3 s12">
                 <h5 class="white-text">Reports</h5>
                 <ul>
-                    <li><a class="white-text" href="https://docs.google.com/document/d/1tx0pmLRZE4RZby07I-bL01cnztbZEeV7zFHNJzchCA0/edit" target="_blank">12/10/16</a></li>
-                    <li><a class="white-text" href="https://docs.google.com/document/d/1h0_8CRuApI9n4V0DEOgf-Uah8vBLOq2F20pLlwKWq3c/edit" target="_blank">28/10/16</a></li>
+                    <li><a class="white-text"
+                           href="https://docs.google.com/document/d/1tx0pmLRZE4RZby07I-bL01cnztbZEeV7zFHNJzchCA0"
+                           target="_blank">12/10/16</a></li>
+                    <li><a class="white-text"
+                           href="https://docs.google.com/document/d/1h0_8CRuApI9n4V0DEOgf-Uah8vBLOq2F20pLlwKWq3c"
+                           target="_blank">28/10/16</a></li>
+                    <li><a class="white-text"
+                           href="https://docs.google.com/document/d/1I9c4WwxtuN11u64bdrsZ8m67RBRk1Ombr153coM1_Cc/">18/11/16</a>
+                    </li>
                 </ul>
             </div>
             <!--<div class="col l3 s12">-->
-                <!--<h5 class="white-text">Connect</h5>-->
-                <!--<ul>-->
-                    <!--<li><a class="white-text" href="#!">Link 1</a></li>-->
-                    <!--<li><a class="white-text" href="#!">Link 2</a></li>-->
-                    <!--<li><a class="white-text" href="#!">Link 3</a></li>-->
-                    <!--<li><a class="white-text" href="#!">Link 4</a></li>-->
-                <!--</ul>-->
+            <!--<h5 class="white-text">Connect</h5>-->
+            <!--<ul>-->
+            <!--<li><a class="white-text" href="#!">Link 1</a></li>-->
+            <!--<li><a class="white-text" href="#!">Link 2</a></li>-->
+            <!--<li><a class="white-text" href="#!">Link 3</a></li>-->
+            <!--<li><a class="white-text" href="#!">Link 4</a></li>-->
+            <!--</ul>-->
             <!--</div>-->
         </div>
     </div>
     <div class="footer-copyright">
         <div class="container">
-            Made by <a class="orange-text text-lighten-3">Jay Jeyaruban, Ryan Collins, Giorgio Arena</a>
+            Made by <a class="brown-text text-lighten-3">Jay Jeyaruban, Ryan Collins, Giorgio Arena</a>
         </div>
     </div>
 </footer>
 
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-<script>
-    !function (A, n, g, u, l, a, r) {
-        A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
-                    (A[l].q = A[l].q || []).push(arguments)
-                }, A[l].l = +new Date, a = n.createElement(g),
-                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-</script>
 
 <!-- Angular scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
