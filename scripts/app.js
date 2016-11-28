@@ -17,8 +17,11 @@ angular
             .when('/', {
                 templateUrl: 'views/main.html',
             })
-            .when('/about', {
+            .when('/background', {
                 templateUrl: 'views/background.html'
+            })
+            .when('/requirements', {
+                templateUrl: 'views/requirements.html'
             })
             .when('/research', {
                 templateUrl: 'views/research.html'
