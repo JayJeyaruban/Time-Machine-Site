@@ -26,8 +26,8 @@ angular
             .when('/research', {
                 templateUrl: 'views/research.html'
             })
-            .when('/ui', {
-                templateUrl: 'views/ui.html'
+            .when('/prototype', {
+                templateUrl: 'views/prototype.html'
             })
             .otherwise({
                 redirectTo: '/'
