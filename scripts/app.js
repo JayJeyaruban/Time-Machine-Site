@@ -14,7 +14,7 @@ angular
     ])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
-            .when('/', {
+            .when('/home', {
                 templateUrl: 'views/main.html',
             })
             .when('/background', {
@@ -30,7 +30,7 @@ angular
                 templateUrl: 'views/prototype.html'
             })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/home'
             });
 
         $locationProvider.html5Mode(true);
