@@ -33,8 +33,13 @@
     <!--<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">-->
     <!--<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">-->
     <!--<link rel="stylesheet" href="/2016/group20/css/rrssb.css" />-->
+
+    <!--<link rel="stylesheet" href="/2016/group20/css/reset.css">-->
+    <!--<link rel="stylesheet" href="/2016/group20/css/style.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -95,13 +100,13 @@
   <nav class="light-blue darken-1" role="navigation">
     <div class="nav-wrapper container">
       <div class="brand-logo left active waves-effect wave-light"><a id="logo-container"
-                                                                     href="/home">Group 20</a></div>
+                                                                     href="/2016/group20/index">Group 20</a></div>
       <ul class="right hide-on-med-and-down">
         <li><a href="https://github.com/orgs/ATOS-Time-Machine/" target="_blank">Github</a></li>
-        <li><a href="background">Background</a></li>
-        <li><a href="requirements">Requirements</a></li>
-        <li><a href="research">Research</a></li>
-        <li><a href="prototype">Prototype</a></li>
+        <li><a href="/2016/group20/background">Background</a></li>
+        <li><a href="/2016/group20/requirements">Requirements</a></li>
+        <li><a href="/2016/group20/research">Research</a></li>
+        <li><a href="/2016/group20/prototype">Prototype</a></li>
       </ul>
 
 
@@ -209,7 +214,30 @@
         </div>
     </div>
 </div>
+
+<div class="light-blue lighten-1 white-text">
+    <div class="container section">
+        <h2 class="center">The Project</h2>
+        <p>The purpose of this project is re-design the current version of Time Machine
+            which
+            is software currently
+            employed by ATOS. From their website ATOS is a company which is “focused on business technology that
+            powers
+            progress and helps organizations to create their firm of the future”, and Time Machine is the
+            software
+            that
+            some departments of ATOS use to manage overtime payments however it was made quite some time ago,
+            and is
+            therefore missing some features which could improve its usability and its UI could also do with a
+            redesign.
+            At the end of the project, we aim to have a working prototype of an improved version of Time Machine
+            which
+            has a much more usable design and has additional features to ensure that there are a minimal amount
+            of
+            manual tasks. </p>
+    </div>
 </div>
+
 
 <!-- Footer Start -->
 
@@ -277,6 +305,8 @@
 <script src="/2016/group20/js/modernizr.js"></script>
 <script src="/2016/group20/js/timeline.js"></script>
 
+
+
 <!-- Custom Theme JavaScript -->
 <!--* Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
 * Code licensed under the Apache License v2.0.
@@ -287,100 +317,100 @@
 <!--$(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click",function(b){var a=$(this);$("html, body").stop().animate({scrollTop:$(a.attr("href")).offset().top-50},1500,"easeInOutExpo",function(){a.blur()});b.preventDefault()})});$(".navbar-collapse ul li a").click(function(){$(".navbar-toggle:visible").click()});-->
 <!--</script>-->
 
+<!---->
 
+  <!--&lt;!&ndash; Collapse navbar when navbar-brand is clicked &ndash;&gt;-->
 
-  <!-- Collapse navbar when navbar-brand is clicked -->
+  <!--<script>-->
+  <!--$(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});-->
+  <!--</script>-->
 
-  <script>
-  $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
-  </script>
+<!---->
 
+<!---->
 
+<!---->
 
+<!---->
 
+<!---->
 
+<!---->
 
+  <!--&lt;!&ndash; Dynamic Typing Start &ndash;&gt;-->
 
+  <!--<script type="text/javascript" src="/2016/group20/js/typed.min.js"></script>-->
+  <!--<script type="text/javascript">-->
 
+  <!--var myQuotes =  new Array();-->
+  <!---->
+    <!--myQuotes.push("The lower you fall, the higher you'll fly.");-->
+  <!---->
+    <!--myQuotes.push("Where’s your will to be weird?");-->
+  <!---->
 
+  <!--function shuffle(array) {-->
+    <!--var currentIndex = array.length, temporaryValue, randomIndex ;-->
 
+    <!--// While there remain elements to shuffle...-->
+    <!--while (0 !== currentIndex) {-->
 
+      <!--// Pick a remaining element...-->
+      <!--randomIndex = Math.floor(Math.random() * currentIndex);-->
+      <!--currentIndex -= 1;-->
 
+      <!--// And swap it with the current element.-->
+      <!--temporaryValue = array[currentIndex];-->
+      <!--array[currentIndex] = array[randomIndex];-->
+      <!--array[randomIndex] = temporaryValue;-->
+    <!--}-->
 
-  <!-- Dynamic Typing Start -->
+    <!--return array;-->
+  <!--}-->
 
-  <script type="text/javascript" src="/2016/group20/js/typed.min.js"></script>
-  <script type="text/javascript">
+  <!---->
+    <!--shuffle(myQuotes)-->
+  <!---->
 
-  var myQuotes =  new Array();
-  
-    myQuotes.push("The lower you fall, the higher you'll fly.");
-  
-    myQuotes.push("Where’s your will to be weird?");
-  
+    <!--$(".intro-text").typed({-->
+      <!--strings: myQuotes,-->
+      <!--typeSpeed: 10,-->
+      <!--backDelay: 5000,-->
+      <!--startDelay: 200,-->
+      <!--loop: true,-->
+      <!--loopCount: false,-->
+      <!--cursorChar: "|"-->
+    <!--});-->
+  <!--</script>-->
 
-  function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex ;
+  <!--&lt;!&ndash; Dynamic Typing End  &ndash;&gt;-->
 
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
+<!---->
 
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
+<!--<script>-->
+<!--function addTohistory() {-->
+  <!--if (!window.location.host.startsWith("127.0.0.1")) {-->
+    <!--history.pushState({}, '', 'http://localhost:4000/2016/group20/');-->
+  <!--}-->
+<!--}-->
+<!--</script>-->
 
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
+<!--&lt;!&ndash; Gesture Navigation / Swipe Instruction Start &ndash;&gt;-->
+<!---->
 
-    return array;
-  }
+  <!---->
 
-  
-    shuffle(myQuotes)
-  
+  <!---->
 
-    $(".intro-text").typed({
-      strings: myQuotes,
-      typeSpeed: 10,
-      backDelay: 5000,
-      startDelay: 200,
-      loop: true,
-      loopCount: false,
-      cursorChar: "|"
-    });
-  </script>
+  <!---->
 
-  <!-- Dynamic Typing End  -->
+  <!---->
 
+<!--&lt;!&ndash; Gesture Navigation / Swipe Instruction End &ndash;&gt;-->
 
+<!---->
 
-<script>
-function addTohistory() {
-  if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, '', 'http://localhost:4000/2016/group20/');
-  }
-}
-</script>
-
-<!-- Gesture Navigation / Swipe Instruction Start -->
-
-
-  
-
-  
-
-  
-
-  
-
-<!-- Gesture Navigation / Swipe Instruction End -->
-
-
-
-<!-- Javascript End -->
+<!--&lt;!&ndash; Javascript End &ndash;&gt;-->
 
 
 </body>
