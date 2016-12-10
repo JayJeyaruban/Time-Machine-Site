@@ -1,0 +1,14 @@
+url: students.cs.ucl.ac.uk"
+baseurl: /2016/group20/
+
+# Site Settings
+title: ATOS Time Machine
+description: "Team project website for group 20 - ATOS Time Machine"
+keywords: "atos, time, machine, group, 20, jekyll"
+google-tracking-id:
+
+# Career Settings
+# Default career thumbnail image.
+career-img: "img/timeline/default.jpg"
+
+exclude: ["Rakefile", "LICENSE", "readme.markdown"]
