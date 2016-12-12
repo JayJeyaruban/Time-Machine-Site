@@ -5,7 +5,7 @@
 
 {% include head.html %}
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="151" class="white">
+<body>
 
 {% include navigation.html %}
 
@@ -25,9 +25,18 @@
     </div>
 </nav>
 
+<!--<div class="right ">-->
+    <!--<div class="col hide-on-small-only m3 l2">-->
+        <!--<ul class="section table-of-contents">-->
+            <!--<li><a href="#client">Client Information</a></li>-->
+            <!--<li><a href="#problem">Problem Definition</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+
 <div>
     <div class="container">
-        <div class="section">
+        <div id="client" class="section scrollspy">
             <h2 class="center">Client Information</h2>
 
             <div class="card center-align">
@@ -40,7 +49,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div id="problem" class="section scrollspy">
             <h2 class="center">Problem Definition</h2>
 
             <div class="card center-align">
@@ -57,6 +66,8 @@
         </div>
     </div>
 </div>
+
+{% include js.html %}
 
 </body>
 </html>

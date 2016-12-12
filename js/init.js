@@ -24,3 +24,15 @@ $(document).ready(function(){
 });
 
 $(".dropdown-button").dropdown();
+
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+});
+
+// $(document).ready(function(){
+//     $('.target').pushpin({
+//         // top: 0,
+//         bottom: 1000,
+//         offset: 0
+//     });
+// });
