@@ -11,19 +11,26 @@
                 <li><a href="https://github.com/orgs/ATOS-Time-Machine/" target="_blank">Github</a></li>
                 <li><a href="{{ site.baseurl }}/background.html">Background</a></li>
                 <li><a href="{{ site.baseurl }}/requirements.html">Requirements</a></li>
-                <li><a class="dropdown-button" data-activates="dropdown" data-beloworigin="true">Research<i
+                <li><a class="dropdown-button" data-activates="research_dropdown" data-beloworigin="true">Research<i
                         class="material-icons right">arrow_drop_down</i></a>
                 </li>
-                <li><a href="{{ site.baseurl }}/prototype.html">Prototype</a></li>
+                <li><a class="dropdown-button" data-activates="prototype_dropdown" data-beloworigin="true">Prototypes<i
+                        class="material-icons right">arrow_drop_down</i></a>
+                </li>
                 <li><a href="{{ site.baseurl }}/testing.html">Testing</a></li>
             </ul>
         </div>
     </nav>
 </nav>
 
-<ul id="dropdown" class="dropdown-content">
+<ul id="research_dropdown" class="dropdown-content">
     <li><a href="{{ site.baseurl }}/dev_methods.html">Development Methods</a></li>
     <li><a href="{{ site.baseurl }}/technical.html">Technical Report</a></li>
+</ul>
+
+<ul id="prototype_dropdown" class="dropdown-content">
+    <li><a href="{{ site.baseurl }}/ui.html">UI Mockups</a></li>
+    <li><a href="{{ site.baseurl }}/database.html">Database</a></li>
 </ul>
 
 <!-- Intro End -->
