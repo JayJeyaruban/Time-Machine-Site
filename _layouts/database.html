@@ -230,13 +230,35 @@
                 <br>
 
                 <div id="code">
-                    <iframe src="https://drive.google.com/file/d/0B7PFGHt-zxyBSU5kZ0NmeTVpdE0/preview" width=100%
-                            height=480px></iframe>
+                    <iframe src="https://drive.google.com/file/d/0B9v_piN3K2HGZ0pHNTlWdFk3VTQ/preview" width=100%
+                            height="480"></iframe>
+
+                    <!--<p>First, we need to create the Database. We decided to use Upper Camel convention.</p>-->
+                    <!--<div>-->
+                        <!--{% highlight rust %}-->
+                        <!--CREATE DATABASE TimeMachineDB;-->
+                        <!--{% endhighlight %}-->
+                    <!--</div>-->
+
+                    <!--<p>For creating each table, we need to specify the database they are going to be put in as well-->
+                        <!--as-->
+                        <!--the name of the table itself as such: DatabaseName.TableName. No record can be NULL.</p>-->
+
+                    <!--<p>The first table to be created, will contain every task to be performed. It will be formed by-->
+                        <!--a-->
+                        <!--description of the task and the unique task ID used as the table’s primary key.</p>-->
+
+                    <!--<div>-->
+                        <!--{% highlight rust %}-->
+                        <!--CREATE TABLE TimeMachineDB.Tasks (taskID INT NOT NULL,-->
+                        <!--description TEXT NOT NULL,-->
+                        <!--PRIMARY KEY (taskID));-->
+                        <!--{% endhighlight %}-->
+                    <!--</div>-->
                 </div>
 
                 <div id="schema">
-                    <iframe src="https://drive.google.com/file/d/0B7PFGHt-zxyBM2hXdUptYnZhVFE/preview" width=100%
-                            height="480"></iframe>
+                    <img class="center" src="{{ site.baseurl }}/img/database_schema.png">
                 </div>
             </div>
         </div>
