@@ -19,7 +19,8 @@
 <nav>
     <div class="nav-wrapper">
         <div class="container col">
-            <a href="{{ site.baseurl }}/research" class="breadcrumb">Research</a>
+            <a href="{{ site.baseurl }}/index.html" class="breadcrumb">Home</a>
+            <a href="{{ site.baseurl }}/research.html" class="breadcrumb">Research</a>
             <a href="" class="breadcrumb">Technical Investigation</a>
         </div>
     </div>
@@ -38,7 +39,39 @@
             advantage of to assist our development process was necessary.
         </p>
     </div>
+
+    <div class="card row">
+        <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a class="active" href="#mobile">Mobile</a></li>
+            <li class="tab"><a href="#desktop">Desktop</a></li>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <p>
+            One of the options being considered was a mobile app. This was because the client was happy for us to focus on
+            ideas and creating something unique and different from what they currently had. Whether alone or in tandem with
+            a web app for computer access, we decided that the optimal thing to do would be to make apps for both iOS and
+            Android since this would be the most convenient solution for the client as their staff make use of both
+            platforms. This left us with a couple of options, either we make native apps for both Android and iOS using the
+            native, first-class frameworks for both platforms (native apps), or we make use of a cross-platform framework
+            that would allow us to build apps for both platforms simultaneously (hybrid apps).
+        </p>
+        <p>
+            Native apps have several advantages over hybrid apps which all centre around usability. Native apps have better
+            performance which can extend from the launch time of the app, its stability, to the smoothness of the animations
+            and transitions within it, better, more reliable framework access to hardware functionality from the device -
+            think GPS, camera, gyro etc. - and better support and documentation to rely upon. These are important aspects to
+            consider as they play a vital role in improving the user experience. Despite these advantages, taking this
+            approach would require knowledge of both Android and Swift/Objective-C and the platform frameworks necessary for
+            development. On our team, only one member has experience with Android development which would require Swift and
+            iOS to be learned from the beginning. This requirement is an important point to consider when decided what
+            direction to take.
+        </p>
+    </div>
 </div>
+
+
 
 {% include js.html %}
 
