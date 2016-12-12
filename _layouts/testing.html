@@ -68,31 +68,41 @@
         features that they are testing and make sure they are aware of what we want them to accept.
     </p>
     <br>
+</div>
 
-    <h3>Toolchain</h3>
-    <div class="divider"></div>
+<div class="section light-blue lighten-1">
+    <div class="container">
 
-    <div class="row section">
-        <div class="col s36 m4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Browsers</span>
-                    <div class="divider"></div>
+        <h3 class="white-text">Toolchain</h3>
+        <div class="divider"></div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#browsers">Browsers</a></li>
+                        <li class="tab"><a href="#techs">Technologies</a></li>
+                        <li class="tab"><a href="#deploy">Deployment & Automation</a></li>
+                        <li class="tab"><a href="#editors">Text Editors</a></li>
+                        <li class="tab"><a href="#design">Design & Graphical Software</a></li>
+                        <li class="tab"><a href="#version">Version Control</a></li>
+                    </ul>
+                </div>
+
+                <div id="browsers">
                     <ul class="browser-default">
                         <li>Chrome</li>
                         <li>Safari</li>
                         <li>Edge</li>
                         <li>Firefox</li>
                     </ul>
+                    <p>We decided that we would try and keep our web application flexible and able to be used all of the
+                        most web browsers which are still being developed. This will allow our clients more flexibility
+                        in choosing the web browsers they want to use, especially if they change later on after
+                        development has been completed.</p>
                 </div>
-            </div>
-        </div>
 
-        <div class="col s36 m4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Languages, Frameworks, Libraries</span>
-                    <div class="divider"></div>
+                <div id="techs">
                     <ul class="browser-default">
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -101,15 +111,13 @@
                         <li>MYSQL</li>
                         <li>NodeJS</li>
                     </ul>
+                    <p>We choose programming languages that we were already comfortable with because our client’s gave
+                        us free reign on which language to use. The combination of these languages will easily allow us
+                        to program both our front-ends and back-ends with the addition of the fact that PHP was designed
+                        to be able to be integrated with HTML and Javascript.</p>
                 </div>
-            </div>
-        </div>
 
-        <div class="col s36 m4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Deployment & Automation</span>
-                    <div class="divider"></div>
+                <div id="deploy">
                     <ul class="browser-default">
                         <li>Cloud Server- Azure</li>
                         <li>Script for automatic build for each version control push</li>
@@ -118,52 +126,59 @@
                         <li>Script for automating unit tests for each build</li>
                         <li>Script for moving staging build to production server</li>
                     </ul>
+                    <p>We decided to use Azure as a Cloud Server as one of our team members has had previous experiences
+                        using it. We also compared Azure service with the Amazon EC2, and we found the first one to be
+                        easier to use and more suitable for this project’s goals. We chose to write scripts for automise
+                        version control push, reboots, backups creation and unit test as it will save us time and it
+                        will best prevent human errors.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row section">
-        <div class="col s36 m4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Text editors</span>
-                    <div class="divider"></div>
+                <div id="editors">
                     <ul class="browser-default">
                         <li>Sublime Text 3</li>
                         <li>Atom</li>
                         <li>WebStorm</li>
                     </ul>
+                    <p>Each of our group members will most likely be using different text editors according to what they
+                        are most useful which in terms of this project we felt would be most useful as using what you
+                        are comfortable with will make it easier to develop more efficiently. Due to the nature of using
+                        HTML, Javascript and PHP, the fact that we are using different text editors will not make any
+                        difference and will just provide more convenience for us.
+                    </p>
                 </div>
-            </div>
-        </div>
 
-        <div class="col s36 m4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Design & Graphical Software</span>
-                    <div class="divider"></div>
+                <div id="design">
                     <ul class="browser-default">
                         <li>Balsamiq Mockups</li>
                     </ul>
+                    <p>In order to create our wireframes to be a high fidelity representation of our user interface
+                        designs we decided to use Balsamiq. This enables to quickly create high quality wireframes where
+                        we can easily demonstrate how we are consider design principles and gearing our interface to
+                        stand up to Nielsen Heuristics. This also means that our clients will be able to have a better
+                        idea of the direction we’re taking.
+                    </p>
                 </div>
-            </div>
-        </div>
 
-        <div class="col s36 m4">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title">Version Control</span>
-                    <div class="divider"></div>
+                <div id="version">
                     <ul class="browser-default">
-                        <li>Git</li>
+                        <li>Git (Github)</li>
                     </ul>
+                    <p>For our version control we decided to use github since all of our team members have had previous
+                        experience with it before, and our clients did not mind where we host our repository. Github is
+                        a version control system which works with git allowing all of the contributors to push to the
+                        same repository allowing this project to be more of a collaborative effort. We also chose to use
+                        Github over other version control system because of the broad community and wide amount of
+                        support meaning anyone else who might want to on this project at a later date will easily be
+                        able to do so.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
+
+
 
 {% include js.html %}
 
