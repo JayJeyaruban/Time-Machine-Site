@@ -24,6 +24,197 @@
     </div>
 </nav>
 
+<div class="section container">
+    <h2>Database Experiments</h2>
+    <div class="divider"></div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="row">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#ex1">Experiment 1</a></li>
+                    <li class="tab"><a href="#ex2">Experiment 2</a></li>
+                    <li class="tab"><a href="#ex3">Experiment 3</a></li>
+                    <li class="tab"><a href="#ex4">Experiment 4</a></li>
+                </ul>
+            </div>
+
+            <div id="ex1">
+                <h4>Experiment 1 - Find the most appropriate DBMS</h4>
+                <p>We narrowed down a list of DBMSs to the most common ones (SQL Server, Oracle SQL, SQLite and MySQL)
+                    and we performed some tests to decided which one do adopt for this project.</p>
+                <table class="striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Experiment No.</th>
+                        <th>Experiment Title</th>
+                        <th>Experiment Details</th>
+                        <th>Experiment Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1.1</td>
+                        <td>Dealing with different platforms</td>
+                        <td>We have tried to install and perform small tasks (e.g. create a simple table) for every of
+                            the proposed DBMS in the following Operative Systems: Windows; UNIX-based systems.
+                        </td>
+                        <td>As SQL Server is only available on Windows platform, we decided to discard it.</td>
+                    </tr>
+                    <tr>
+                        <td>1.2</td>
+                        <td>Dealing with proprietary software</td>
+                        <td>To avoid intellectual property issues, we decided to research whether or not the proposed
+                            DBMS use a proprietary license
+                        </td>
+                        <td>As Oracle SQL use a proprietary license, we decided to discard it</td>
+                    </tr>
+                    <tr>
+                        <td>1.3</td>
+                        <td>Data types variety</td>
+                        <td>To facilitate further database improvements and extensions, we opted for a DBMS that allows
+                            as many data types as possible. Using each integrated environment, we had access to a list
+                            of all the available data types for each DBMS and we could therefore compare them
+                        </td>
+                        <td>As SQLite offers way less data types than MySQL does, we decided to discard it. We
+                            eventually chose to use MySQL as DBMS to use for this project
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="ex2">
+                <h4>Experiment 2 - Find the most appropriate MySQL Engine</h4>
+                <p>Once decided which DBMS to go for, we had to decide whether to adopt MyISAM or Innodb as table
+                    engine.</p>
+                <table class="striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Experiment No.</th>
+                        <th>Experiment Title</th>
+                        <th>Experiment Details</th>
+                        <th>Experiment Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2.1</td>
+                        <td>Following ACID properties</td>
+                        <td>Given the potential frequency of use of the system, we decided that ACID transactions had to
+                            be used to maintain data integrity. We therefore researched which engine made use of ACID
+                            properties
+                        </td>
+                        <td>Consequently to our research, we found out that MyISAM does not offer ACID proprieties
+                            whilst Innodb does
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2.2</td>
+                        <td>Speed</td>
+                        <td>Given the potential size of the system, we decided that speed was also to prioritise. We
+                            therefore researched which engine performed faster operations
+                        </td>
+                        <td>Consequently to our research, we found out that MyISAM is slightly faster as it does not
+                            offer ACID proprieties
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2.3</td>
+                        <td>Finding a compromise</td>
+                        <td>After performing some speed tests on our database, we found out the difference of speed
+                            between the two systems is not sensibly big, even performing multiple complicated
+                            calculations at the same time
+                        </td>
+                        <td>We decided to value the ACID properties more than speed as data integrity is much more
+                            important for this particular project. Therefore we chose Innodb as engine to use for this
+                            project
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="ex3">
+                <h4>Experiment 3 - Data Normalisation and Standardisation</h4>
+                <p>We went through the process of Data Normalisation and Standardisation for our Database and changed it
+                    accordingly</p>
+                <table class="striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Experiment No.</th>
+                        <th>Experiment Title</th>
+                        <th>Experiment Details</th>
+                        <th>Experiment Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3.1</td>
+                        <td>Data Normalisation and Standardisation</td>
+                        <td>Performed usual checks to see whether the created database respect the 1 st , 2 nd and 3 rd
+                            Normal Form and researched about the most used data standards
+                        </td>
+                        <td>Performed usual checks to see whether the created database respect the 1 st , 2 nd and 3 rd
+                            Normal Form and researched about the most used data standards
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="ex4">
+                <h4>Experiment 4 - Dealing with fields’ data types</h4>
+                <p>We needed to check the previous system and perform some tests on the new system’s fields to optimally
+                    satisfy the user requirements.</p>
+                <table class="striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Experiment No.</th>
+                        <th>Experiment Title</th>
+                        <th>Experiment Details</th>
+                        <th>Experiment Results</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>4.1</td>
+                        <td>Checking the data behaviour of the existing solution</td>
+                        <td>Checked the behaviour of inserting any type of data in any field of the existing solution
+                        </td>
+                        <td>Came up with a list of behaviours for each fields</td>
+                    </tr>
+                    <tr>
+                        <td>4.2</td>
+                        <td>Perform complicated overtime calculations</td>
+                        <td>We performed some calculations on huge salaries and compared the outcome results with the
+                            ones of the existing system
+                        </td>
+                        <td>Switched travelCost and callout fields from FLOAT to to CONCURRENCY type</td>
+                    </tr>
+                    <tr>
+                        <td>4.3</td>
+                        <td>Trying to put NULL values</td>
+                        <td>We checked the errors thrown in case we omit any value</td>
+                        <td>To not overcomplicate the system, we set every field’s boundary to NOT NULL</td>
+                    </tr>
+                    <tr>
+                        <td>4.4</td>
+                        <td>Fetch the example IDs into our Database</td>
+                        <td>As we were undecided whether to use INT or TEXT type for IDs, we performed some research on
+                            the standard and the requirements of the system
+                        </td>
+                        <td>We used TEXT for staffID as required from the client, but we used INT for the other keys for
+                            a performance and standardisation matter
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="light-blue lighten-1">
     <div class="section container">
         <h2 class="white-text">Database Creation</h2>
