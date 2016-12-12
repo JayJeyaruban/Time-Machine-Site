@@ -22,3 +22,5 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('ul.tabs').tabs();
 });
+
+$(".dropdown-button").dropdown();
