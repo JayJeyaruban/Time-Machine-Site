@@ -25,11 +25,11 @@
 
 
 <div>
-    <div class="container ">
+
+    <!--Initial requirements section-->
+    <div class="container">
         <div id="initial" class="section scrollspy">
-
-            <h2 class="center">Initial Requirements</h2>
-
+            <h2>Initial Requirements</h2>
             <div class="center-align card">
                 <div class="card-content left-align">
                     <ul class="browser-default">
@@ -60,267 +60,569 @@
             </div>
         </div>
     </div>
+
+
+    <!--MoSCoW Section-->
     <div class="section scrollspy light-blue lighten-1">
         <div class="container">
-            <h2 class="center white-text">MoSCoW Requirements</h2>
+            <h2 class="white-text">MoSCoW Requirements</h2>
+            <div class="divider"></div>
             <div class="card">
                 <div class="card-content">
-                    <table class="striped responsive-table">
-                        <thead>
-                        <tr>
-                            <th data-field="requirement">Requirement</th>
-                            <th data-field="type">Type</th>
-                            <th data-field="category">Category</th>
-                            <th data-field="priority">Priority</th>
-                        </tr>
-                        </thead>
+                    <div class="row">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#login">Login</a></li>
+                            <li class="tab"><a href="#standard">Standard Users</a></li>
+                            <li class="tab"><a href="#leader">Team Leaders</a></li>
+                            <li class="tab"><a href="#admin">Administrators</a></li>
+                            <li class="tab"><a href="#misc">Misc</a></li>
+                        </ul>
+                    </div>
 
-                        <tbody>
+                    <div id="login">
+                        <table class="striped responsive-table">
+                            <thead>
+                            <tr>
+                                <th data-field="requirement">Requirement</th>
+                                <th data-field="type">Type</th>
+                                <th data-field="category">Category</th>
+                                <th data-field="priority">Priority</th>
+                            </tr>
+                            </thead>
 
-                        <!--Login-->
-                        <tr>
-                            <td>Time machine shall have users logon to connect to the system using their current
-                                credentials
-                                (i.e. email).
-                            </td>
-                            <td>Functional</td>
-                            <td>Login</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a database which stores these user’s accounts with their
-                                passwords
-                                hashed in order to access stored data related to them.
-                            </td>
-                            <td>Functional</td>
-                            <td>Login</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall be able to assign different level of permission to users limiting
-                                which
-                                features they can access depending on what role they have in the company.
-                            </td>
-                            <td>Functional</td>
-                            <td>Login</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a page for creating a new account upon a user’s first time using
-                                the
-                                site.
-                            </td>
-                            <td>Functional</td>
-                            <td>Login</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a page to reset the password if the user has forgotten by
-                                utilising
-                                their ATOS email.
-                            </td>
-                            <td>Functional</td>
-                            <td>Login</td>
-                            <td>Should</td>
-                        </tr>
+                            <tbody>
 
-                        <!--Standard User-->
-                        <tr>
-                            <td>Time machine shall be able to give the user of form to fill in when they want to submit
-                                an
-                                overtime request making use of textboxes and combo lists, and store these in a database.
-                            </td>
-                            <td>Functional</td>
-                            <td>Standard User</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have the feature of adding favourite WBS codes which can be used when
-                                submitting an overtime request, which can be chosen from a list.
-                            </td>
-                            <td>Functional</td>
-                            <td>Standard User</td>
-                            <td>Should</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have the feature of being able to edit a user profile where they can
-                                change
-                                submit a request to change their name, address and email which can overseen by a user
-                                with a
-                                high level of permissions
-                            </td>
-                            <td>Functional</td>
-                            <td>Standard User</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall email users once the pre-approved overtime has been completed
-                                informing them
-                                of the need to go on Time Machine and confirm the anticipated overtime specifics matches
-                                up to
-                                what happened.
-                            </td>
-                            <td>Functional</td>
-                            <td>Standard User</td>
-                            <td>Should</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a tab which shows a summary of their overtime request and then
-                                for each
-                                request a link to page which enables them to enter the details of what actually and a
-                                textbox to
-                                supply a comment explaining any difference in time.
-                            </td>
-                            <td>Functional</td>
-                            <td>Standard User</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a tab which shows all of the overtime requests that have been
-                                approved and confirmed by the user.
-                            </td>
-                            <td>Functional</td>
-                            <td>Standard User</td>
-                            <td>Should</td>
-                        </tr>
+                            <!--Login-->
+                            <tr>
+                                <td>Time machine shall have users logon to connect to the system using their current
+                                    credentials
+                                    (i.e. email).
+                                </td>
+                                <td>Functional</td>
+                                <td>Login</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a database which stores these user’s accounts with their
+                                    passwords
+                                    hashed in order to access stored data related to them.
+                                </td>
+                                <td>Functional</td>
+                                <td>Login</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall be able to assign different level of permission to users limiting
+                                    which
+                                    features they can access depending on what role they have in the company.
+                                </td>
+                                <td>Functional</td>
+                                <td>Login</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a page for creating a new account upon a user’s first time
+                                    using
+                                    the
+                                    site.
+                                </td>
+                                <td>Functional</td>
+                                <td>Login</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a page to reset the password if the user has forgotten by
+                                    utilising
+                                    their ATOS email.
+                                </td>
+                                <td>Functional</td>
+                                <td>Login</td>
+                                <td>Should</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                        <!--Team leader-->
-                        <tr>
-                            <td>Time machine will be able to allocate certain users with the correct permissions as an
-                                approved for a selection of other users.
-                            </td>
-                            <td>Functional</td>
-                            <td>Team Leaders</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a tab for approvers to see the overtime requests of the users
-                                they’re overseeing with a button to begin processing these requests.
-                            </td>
-                            <td>Functional</td>
-                            <td>Team Leaders</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a page for the approvers which show a summary of other users
-                                overtime request and then radio buttons to decide whether or not to approve the request
-                                with space to add comment before they submit.
-                            </td>
-                            <td>Functional</td>
-                            <td>Team Leaders</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall allow approvers to generate overtime reports based on the information
-                                selected by users using simple filters specifically the date, and the ability to send
-                                these monthly to users on request.
-                            </td>
-                            <td>Functional</td>
-                            <td>Team Leaders</td>
-                            <td>Should</td>
-                        </tr>
+                    <div id="standard">
+                        <table class="striped responsive-table">
+                            <thead>
+                            <tr>
+                                <th data-field="requirement">Requirement</th>
+                                <th data-field="type">Type</th>
+                                <th data-field="category">Category</th>
+                                <th data-field="priority">Priority</th>
+                            </tr>
+                            </thead>
+                            <!--Standard User-->
+                            <tbody>
+                            <tr>
+                                <td>Time machine shall be able to give the user of form to fill in when they want to
+                                    submit
+                                    an
+                                    overtime request making use of textboxes and combo lists, and store these in a
+                                    database.
+                                </td>
+                                <td>Functional</td>
+                                <td>Standard User</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have the feature of adding favourite WBS codes which can be used
+                                    when
+                                    submitting an overtime request, which can be chosen from a list.
+                                </td>
+                                <td>Functional</td>
+                                <td>Standard User</td>
+                                <td>Should</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have the feature of being able to edit a user profile where they
+                                    can
+                                    change
+                                    submit a request to change their name, address and email which can overseen by a
+                                    user
+                                    with a
+                                    high level of permissions
+                                </td>
+                                <td>Functional</td>
+                                <td>Standard User</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall email users once the pre-approved overtime has been completed
+                                    informing them
+                                    of the need to go on Time Machine and confirm the anticipated overtime specifics
+                                    matches
+                                    up to
+                                    what happened.
+                                </td>
+                                <td>Functional</td>
+                                <td>Standard User</td>
+                                <td>Should</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a tab which shows a summary of their overtime request and
+                                    then
+                                    for each
+                                    request a link to page which enables them to enter the details of what actually and
+                                    a
+                                    textbox to
+                                    supply a comment explaining any difference in time.
+                                </td>
+                                <td>Functional</td>
+                                <td>Standard User</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a tab which shows all of the overtime requests that have
+                                    been
+                                    approved and confirmed by the user.
+                                </td>
+                                <td>Functional</td>
+                                <td>Standard User</td>
+                                <td>Should</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                        <!--Administrators-->
-                        <tr>
-                            <td>Time machine will be able to allocate certain users with the correct permissions as an
-                                administrator.
-                            </td>
-                            <td>Functional</td>
-                            <td>Administrators</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will have a page for administrators to view and edit all users, as well as
-                                the ability to create new users specify emails which can be used when creating accounts
-                                and what roles these users will have as well as their personal information.
-                            </td>
-                            <td>Functional</td>
-                            <td>Administrators</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will allow administrators to transfer users from one group i.e the
-                                supervision of one approver (team leader) to another.
-                            </td>
-                            <td>Functional</td>
-                            <td>Administrators</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will allow administrators to control the payment options for roles and if
-                                need be individual users.
-                            </td>
-                            <td>Functional</td>
-                            <td>Administrators</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will allow administrators to see an overview of all the team/groups will
-                                the ability to edit it.
-                            </td>
-                            <td>Functional</td>
-                            <td>Administrators</td>
-                            <td>Should</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will be able to link approved overtime requests to ESS with the payment
-                                changes by administrators noted as well.
-                            </td>
-                            <td>Functional</td>
-                            <td>Administrators</td>
-                            <td>Could</td>
-                        </tr>
+                    <div id="leader">
+                        <table class="striped responsive-table">
+                            <thead>
+                            <tr>
+                                <th data-field="requirement">Requirement</th>
+                                <th data-field="type">Type</th>
+                                <th data-field="category">Category</th>
+                                <th data-field="priority">Priority</th>
+                            </tr>
+                            </thead>
+                            <!--Team leader-->
+                            <tbody>
+                            <tr>
+                                <td>Time machine will be able to allocate certain users with the correct permissions as
+                                    an
+                                    approved for a selection of other users.
+                                </td>
+                                <td>Functional</td>
+                                <td>Team Leaders</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a tab for approvers to see the overtime requests of the
+                                    users
+                                    they’re overseeing with a button to begin processing these requests.
+                                </td>
+                                <td>Functional</td>
+                                <td>Team Leaders</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a page for the approvers which show a summary of other users
+                                    overtime request and then radio buttons to decide whether or not to approve the
+                                    request
+                                    with space to add comment before they submit.
+                                </td>
+                                <td>Functional</td>
+                                <td>Team Leaders</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall allow approvers to generate overtime reports based on the
+                                    information
+                                    selected by users using simple filters specifically the date, and the ability to
+                                    send
+                                    these monthly to users on request.
+                                </td>
+                                <td>Functional</td>
+                                <td>Team Leaders</td>
+                                <td>Should</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                        <!--Other-->
-                        <tr>
-                            <td>Time machine will allow users to complete each task within 5 clicks.</td>
-                            <td>Non-Functional</td>
-                            <td>Ease of Use</td>
-                            <td>Should</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will have an uptime of at least 99%.</td>
-                            <td>Non-Functional</td>
-                            <td>Availability</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will make sure users do not need to spend more than 5 minutes on completing
-                                tasks.
-                            </td>
-                            <td>Non-Functional</td>
-                            <td>Ease of Use</td>
-                            <td>Should</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall support the latest versions of Chrome, Safari, Firefox, and Internet
-                                Explorer.
-                            </td>
-                            <td>Non-Functional</td>
-                            <td>Performance</td>
-                            <td>Must</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine will be able to scale and resize for mobile and other devices.</td>
-                            <td>Non-Functional</td>
-                            <td>Ease of Use</td>
-                            <td>Could</td>
-                        </tr>
-                        <tr>
-                            <td>Time machine shall have a method of getting text based help which can help navigate and
-                                utilise site, which can be accessed on every page.
-                            </td>
-                            <td>Non-Functional</td>
-                            <td>Ease of Use</td>
-                            <td>Must</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div id="administrators">
+                        <table class="striped responsive-table">
+                            <thead>
+                            <tr>
+                                <th data-field="requirement">Requirement</th>
+                                <th data-field="type">Type</th>
+                                <th data-field="category">Category</th>
+                                <th data-field="priority">Priority</th>
+                            </tr>
+                            </thead>
+                            <!--Administrators-->
+                            <tbody>
+                            <tr>
+                                <td>Time machine will be able to allocate certain users with the correct permissions as
+                                    an
+                                    administrator.
+                                </td>
+                                <td>Functional</td>
+                                <td>Administrators</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will have a page for administrators to view and edit all users, as well
+                                    as
+                                    the ability to create new users specify emails which can be used when creating
+                                    accounts
+                                    and what roles these users will have as well as their personal information.
+                                </td>
+                                <td>Functional</td>
+                                <td>Administrators</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will allow administrators to transfer users from one group i.e the
+                                    supervision of one approver (team leader) to another.
+                                </td>
+                                <td>Functional</td>
+                                <td>Administrators</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will allow administrators to control the payment options for roles and
+                                    if
+                                    need be individual users.
+                                </td>
+                                <td>Functional</td>
+                                <td>Administrators</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will allow administrators to see an overview of all the team/groups
+                                    will
+                                    the ability to edit it.
+                                </td>
+                                <td>Functional</td>
+                                <td>Administrators</td>
+                                <td>Should</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will be able to link approved overtime requests to ESS with the payment
+                                    changes by administrators noted as well.
+                                </td>
+                                <td>Functional</td>
+                                <td>Administrators</td>
+                                <td>Could</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="misc">
+                        <table class="striped responsive-table">
+                            <thead>
+                            <tr>
+                                <th data-field="requirement">Requirement</th>
+                                <th data-field="type">Type</th>
+                                <th data-field="category">Category</th>
+                                <th data-field="priority">Priority</th>
+                            </tr>
+                            </thead>
+                            <!--Other-->
+                            <tbody>
+                            <tr>
+                                <td>Time machine will allow users to complete each task within 5 clicks.</td>
+                                <td>Non-Functional</td>
+                                <td>Ease of Use</td>
+                                <td>Should</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will have an uptime of at least 99%.</td>
+                                <td>Non-Functional</td>
+                                <td>Availability</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will make sure users do not need to spend more than 5 minutes on
+                                    completing
+                                    tasks.
+                                </td>
+                                <td>Non-Functional</td>
+                                <td>Ease of Use</td>
+                                <td>Should</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall support the latest versions of Chrome, Safari, Firefox, and
+                                    Internet
+                                    Explorer.
+                                </td>
+                                <td>Non-Functional</td>
+                                <td>Performance</td>
+                                <td>Must</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine will be able to scale and resize for mobile and other devices.</td>
+                                <td>Non-Functional</td>
+                                <td>Ease of Use</td>
+                                <td>Could</td>
+                            </tr>
+                            <tr>
+                                <td>Time machine shall have a method of getting text based help which can help navigate
+                                    and
+                                    utilise site, which can be accessed on every page.
+                                </td>
+                                <td>Non-Functional</td>
+                                <td>Ease of Use</td>
+                                <td>Must</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
+
+        <!--Use cases section-->
+        <div class="container">
+            <div id="uses" class="section">
+                <h2>Use Cases</h2>
+                <div class="divider"></div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <ul class="tabs tabs-fixed-width">
+                                <li class="tab"><a class="active" href="#case1">Use Case 1</a></li>
+                                <li class="tab"><a href="#case2">Use Case 2</a></li>
+                                <li class="tab"><a href="#case3">Use Case 3</a></li>
+                                <li class="tab"><a href="#case4">Use Case 4</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="case1">
+                            <table class="striped center responsive-table">
+                                <tbody>
+                                <tr>
+                                    <td>Use Case</td>
+                                    <td>Logging in</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>A user attempts to log in to the system</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary actor</td>
+                                    <td>Standard users</td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary actor</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Precondition</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Main Flow</td>
+                                    <td>
+                                        <ol>
+                                            <li>The user loads up the webpage</li>
+                                            <li>The user enters their email in the appropriate field</li>
+                                            <li>The user must enter their password in the appropriate field</li>
+                                            <li>The user must either use the 'log on' button or press enter</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post-Condition</td>
+                                    <td>The user should land on the homepage</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="case2">
+                            <table class="striped center responsive-table">
+                                <tbody>
+                                <tr>
+                                    <td>Use Case</td>
+                                    <td>Overtime Request</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>A user attempts to submit an overtime request</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary actor</td>
+                                    <td>Standard users</td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary actor</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Precondition</td>
+                                    <td>The user must have logged into the system</td>
+                                </tr>
+                                <tr>
+                                    <td>Main Flow</td>
+                                    <td>
+                                        <ol>
+                                            <li>The user must head to the overtime request tab</li>
+                                            <li>They must select the option to create a new request</li>
+                                            <li>They must then fill in all of the field</li>
+                                            <li>They must then submit the overtime request</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post-Condtion</td>
+                                    <td>The overtime request will then go to their team leader for approval, and then
+                                        request the user confirm that they did follow what their request claims
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="case3">
+                            <table class="striped center responsive-table">
+                                <tbody>
+                                <tr>
+                                    <td>Use Case</td>
+                                    <td>Overtime Report</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>A team leader attempts to generate an overtime report</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary actor</td>
+                                    <td>Team leaders</td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary actor</td>
+                                    <td>Standard users</td>
+                                </tr>
+                                <tr>
+                                    <td>Precondition</td>
+                                    <td>The user must have logged into the system, have team leader permissions, and
+                                        users
+                                        under their supervision must have submitted one overtime request which has since
+                                        been approved.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Main Flow</td>
+                                    <td>
+                                        <ol>
+                                            <li>The user must head to the the overtime report tab</li>
+                                            <li>They must then select the option to set up a new report</li>
+                                            <li>They must then fill in all of the fields</li>
+                                            <li>They then must select how after they want the reports to be sent to
+                                                their
+                                                email
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post-Condtion</td>
+                                    <td>The team leader will then be emailed a report with summaries of the overtime
+                                        reports
+                                        within the timeframe specified when setting up the report
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="case4">
+                            <table class="striped center responsive-table">
+                                <tbody>
+                                <tr>
+                                    <td>Use Case</td>
+                                    <td>Special Claims Form</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>A user attempts to generate a special claims form</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary actor</td>
+                                    <td>Standard users</td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary actor</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Precondition</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Main Flow</td>
+                                    <td>
+                                        <ol>
+                                            <li>The user must head to the the special claims tab</li>
+                                            <li>They must then select the option to set up a new special claims form
+                                            </li>
+                                            <li>They must then fill in all of the fields</li>
+                                            <li>They then must submit their request</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post-Condtion</td>
+                                    <td>The user will then be able to download or get an email sent to them with the
+                                        special
+                                        claims form they just generated
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {% include js.html %}
 </body>
 </html>
