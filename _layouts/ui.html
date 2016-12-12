@@ -30,8 +30,10 @@
     <p class="section">
         Before working on the user interface we found it important that we have a design in mind, as it can take a lot
         of time to change in an coded prototype. We straight away went into developing a higher fidelity user interface
-        prototype and skip making sketches as we could already partially base the design on what we saw in the user
-        guide.
+        prototype utilizing the Balsamiq wireframe software and skip making sketches as we could already partially base
+        the design on what we saw in the user guide. We also made sure the designs that we were making were good
+        examples of computer science and software engineering by making sure they were conforming to our requirements
+        and the general HCI design principles.
     </p>
     <div class="card row">
         <div class="card-content">
@@ -56,6 +58,10 @@
                         </li>
                     </ul>
                 </div>
+                <br>
+                <p>The login page will be where the user can utilize their ATOS credentials to access “Time Machine”.
+                    They will also be able to recover their accounts if for some reason they don’t their password or
+                    it's the first time user the system since an administrator added them to the system.</p>
             </div>
 
             <div id="user">
@@ -72,6 +78,10 @@
                         </li>
                     </ul>
                 </div>
+                <br>
+                <p>The user profile page will be where users can view their profile details (+ profile details of those
+                    with a lower permission level) and change certain parts of it according to their role and assigned
+                    permissions that come with it, which can also be found in their profile.</p>
             </div>
 
             <div id="homepage">
@@ -85,6 +95,10 @@
                         </li>
                     </ul>
                 </div>
+                <br>
+                <p>The homepage will be where the users can find helpful information about how to navigate the website,
+                    and how to utilize its various features. There will tabs to make it intuitive for the users to find
+                    all of the information that they need.</p>
             </div>
 
             <div id="over_request">
@@ -107,6 +121,10 @@
                         </li>
                     </ul>
                 </div>
+                <br>
+                <p>The overtime request page will be where the users can access one of the main functionalities of this
+                    web application. On this page they will able to submit their in advance overtime request where they
+                    can clarify what there are going to be doing and why they need to do it in overtime.</p>
             </div>
 
             <div id="over_confirm">
@@ -120,8 +138,79 @@
                         </li>
                     </ul>
                 </div>
+                <br>
+                <p>The overtime confirmation page will be where approved overtime requests will be returned to the user
+                    after the date the specified the overtime would be occurring, and they can clarify what actually
+                    happened during this time, and whether it took the expected time.
+                </p>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="light-blue lighten-1 white-text">
+    <div class="container section">
+
+        <h2>Design Principles</h2>
+        <div class="divider"></div>
+        <p class="section">During the process of designing the user interface we made sure to consider the following
+            design principles
+            in order to ensure the work we were producing would be both good computer science and also of the high
+            quality that our clients are looking for. The following details how we considered these design principles
+            (visibility, affordance, feedback, consistency and constraints).</p>
+
+        <h5>Visibility</h5>
+        <p>We ensured that we considered visibility when designing our user interface prototype, by ensuring that none
+            of the functionalities were hidden. All of the button, text inputs, and other inputs were made large enough
+            such that everything can be found without it being obtrusive to the other elements on the page. We also made
+            use of several tabs throughout the design most notably the static tabs resident at the top of every page
+            once logged which makes it really visible where the different sections and functionalities are. We also made
+            it so that’s possible to get every page from every page page with a minimal amount of clicks ensuring users
+            can not get to page they shouldn’t.</p>
+
+        <br>
+
+        <h5>Affordance</h5>
+        <p>We ensured that we considered affordance when designing our user interface prototype, by ensuring that all
+            elements on the web application avoided being ambiguous, such as making sure the buttons actually looked
+            like something which could be pressed down. We also made it so every input on the page clearly states what
+            it is in order to make it intuitive about what to put into those inputs, or when to use them. We also went
+            with a minimalist approach to the design which means we only have what we need on the page as to obfuscate
+            details on the page making it somewhat more difficult to use and navigate.</p>
+
+        <br>
+
+        <h5>Feedback</h5>
+        <p>We ensured that we considered feedback when designing our user interface prototype, by ensuring that the user
+            always knows the intended result of the input element that the are accessing and that after an action on the
+            system has being completed it is clearly communicated to the user that what they wanted to do has or hasn’t
+            been a success. In order to achieve this every button, text field, and other inputs will have tooltips which
+            activate upon hovering over these elements informing the user of what the intended use of it is. We also
+            plan to have dialog boxes on all non-reversible inputs like submitting an overtime request to give to user a
+            chance to back out if they made a mistake.</p>
+
+        <br>
+
+        <h5>Consistency</h5>
+        <p>We ensured that we considered consistency when designing our user interface prototype, by ensuring that there
+            is a consistent theme across all of the web pages in our web application. This can be seen from the ATOS
+            logo (which functions as a home button) and common set of static tabs found out the top of every page except
+            the login page. The way in which forms are presented has also been made consistent across all relevant
+            screens to allow users the opportunity to get used to the style eventually increasing the rate of which they
+            can used these forms. We have even made the login page consistent with the recover password page in the
+            sense that the ATOS logo remains in the same location in both screens and the input elements remain in the
+            same “column” on both pages.</p>
+
+        <br>
+
+        <h5>Constraints</h5>
+        <p>We ensured that we considered constraints when designing our user interface prototype, by ensuring that is
+            impossible for our users to navigate to a page they should not be able to access so the only error they get
+            is when they have a client side issue like a lack of internet connection. We are also planning to have
+            varying permission levels of the site depending on the role associated with the user’s profile, that limits
+            which of the systems functionalities can be accessed. We will implement this by removing the associated
+            screens with these functionalities from the static tabs situated at the top of the page and redirecting them
+            to the home page if they manually try to access it.</p>
     </div>
 </div>
 
